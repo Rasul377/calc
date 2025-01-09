@@ -1,1 +1,2 @@
-this is calc on the kivy python package for app on android 
+its calcilator on android 
+make on python with kivy
