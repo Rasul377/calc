@@ -204,7 +204,7 @@ class Main_Screen(Screen):
     def write_delete(self, btn):
         self.lbl.text = self.lbl.text[:-1]
 
-
+#создаем знак равно
     def write_equal(self, btn):
         try :
             self.lbl.text = str(eval(str(self.lbl.text)))
@@ -272,15 +272,16 @@ class Main_Screen(Screen):
             self.btn_delete.set_disabled(True)
             self.btn_sqrt.set_disabled(True)
             self.btn_bracket_up.set_disabled(True)
-            self.btn_bracket_down.set_disabled(True)
+         
+self.btn_bracket_down.set_disabled(True)
 
-
+#создаем приложение 
 class App(App):
     def build(self):
         sm = ScreenManager()
         sm.add_widget(Main_Screen())
 
         return sm
-
+#запускаем
 App = App()
 App.run()
